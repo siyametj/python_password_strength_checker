@@ -3,7 +3,8 @@
 import re
 
 class PasswordChecker:
-    def check_strength(self, password: str) -> dict:
+    @staticmethod
+    def check_strength(password: str) -> dict:
         score = 0
         feedback = []
         strength = ""
